@@ -32,7 +32,7 @@ const IdeaDetails = () => {
 
   const fetchIdea = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/idea/${id}`);
+      const response = await fetch(`https://ideahub-project.onrender.com/api/idea/${id}`);
       const data = await response.json();
       setIdea(data);
     } catch (error) {
@@ -57,7 +57,7 @@ const IdeaDetails = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/comment/${id}/create`,
+        `https://ideahub-project.onrender.com/api/comment/${id}/create`,
         {
           method: "POST",
           headers: {
