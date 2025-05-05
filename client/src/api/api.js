@@ -1,7 +1,7 @@
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://ideahub-project.onrender.com/api";
 
 export const register = async(userData)=>{
     try {
