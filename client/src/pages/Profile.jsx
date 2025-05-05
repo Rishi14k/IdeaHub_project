@@ -58,7 +58,7 @@ const Profile = () => {
     }
     const fetchIdeas = async()=>{
       try {
-        const response = await fetch("http://localhost:5000/api/idea");
+        const response = await fetch("https://ideahub-project.onrender.com/api/idea");
       const data = await response.json();
       setIdeas(data);
       } catch (error) {
