@@ -22,7 +22,7 @@
               navigate("/login");
                return;
             }
-              await axios.patch(`http://localhost:5000/api/idea/${ideaId}/toggle-like`,{},{headers:{Authorization:`Bearer ${token}`}})
+              await axios.patch(`https://ideahub-project.onrender.com/api/idea/${ideaId}/toggle-like`,{},{headers:{Authorization:`Bearer ${token}`}})
               if (liked) {
                   setLikeCount(likeCount - 1);
                 } else {
