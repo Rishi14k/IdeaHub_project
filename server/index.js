@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_KEY)
 
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://ideahub-uj1o.onrender.com",
     credentials:true
 }))
 
